@@ -14,15 +14,18 @@ def load_env(file_path=".env"):
                     key, value = line.split("=", 1)
                     os.environ[key] = value.strip("\"")
 
+# get the directory where the script is located 
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+
 # load main .env file to get ENV_NAME
-load_env()
+load_env(os.path.join(SCRIPT_DIR, ".env"))
 
 # determine which environment-specific .env file to load
 ENV = os.getenv("ENV_NAME", "dev").lower()
 ENV_FILE = f".env.{ENV}"
 
-# load environment-specific .env file 
-load_env(ENV_FILE)
+# load environment-specific .env file
+load_env(os.path.join(SCRIPT_DIR, ENV_FILE))
 
 # set gemini API config
 API_KEY = os.getenv("API_KEY")
