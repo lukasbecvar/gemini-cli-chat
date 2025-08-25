@@ -12,7 +12,7 @@ Super simple dependency-free Python script for interacting with the Google Gemin
 2.  **Add Your Key to the env config:** Open the `.env` file and replace the placeholder value of the `API_KEY` variable with your own key. 
 ```sh
 # gemini API token
-API_KEY="AIzaSyC7eJdF6qI01Wy1eIpEPrf-Ohn2ArvL3xg"
+API_KEY="API_KEY"
 
 # gemini model
 MODEL="gemini-1.5-flash"
