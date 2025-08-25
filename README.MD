@@ -21,14 +21,14 @@ MODEL="gemini-1.5-flash"
 ### Interactive Chat Mode
 To start a continuous conversation with the model, run the script without any arguments:
 ```sh
-./gemini_chat.py
+./gemini-chat.py
 ```
 Type your message, press Enter, and wait for the model's response. To end the session, type `exit` or `quit`.
 
 ### Single Message Mode
 To send a single message and get a quick response, pass your message as a command-line argument:
 ```sh
-./gemini_chat.py "What is the capital of the Czech Republic?"
+./gemini-chat.py "What is the capital of the Czech Republic?"
 ```
 
 ## License
